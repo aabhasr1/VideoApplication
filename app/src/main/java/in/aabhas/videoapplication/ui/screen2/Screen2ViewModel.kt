@@ -54,9 +54,11 @@ class Screen2ViewModel : BaseViewModel<Screen2Events>() {
     private fun compressVideo() {
         url.get()?.let {
             event.onCompressionStart()
+            val path = GeneralUtils.getRealPathFromURI(event.parentContext, event.url)
             VideoCompressor(event.parentContext).startCompressing(
-                GeneralUtils.getRealPathFromURI(event.parentContext, event.url),
+                path,
                 selectedCompression,
+                path.substring(path.lastIndexOf("/") + 1),
                 object : VideoCompressor.CompressionListener {
                     override fun compressionFinished(
                         status: Int,

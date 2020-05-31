@@ -16,6 +16,7 @@ class VideoCompressor(private val context: Context) {
     fun startCompressing(
         inputPath: String?,
         compressionFormat: Constants.COMPRESSION_FORMATS,
+        outputFileName: String,
         listener: CompressionListener?
     ) {
         if (inputPath == null || inputPath.isEmpty()) {
@@ -24,7 +25,7 @@ class VideoCompressor(private val context: Context) {
             return
         }
         var outputPath = ""
-        outputPath = "$appDir/video_compress.mp4"
+        outputPath = "$appDir/$outputFileName"
         val commandParams =
             arrayOf<String?>(
                 "-y",
