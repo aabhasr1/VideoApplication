@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">VideoApplication</string>
+    <string name="select_a_video">Select a video</string>
+    <string name="compress">Compress</string>
+    <string name="select_bitrate">Select BitRate :</string>
+    <string name="compressing_video">Compressing Video</string>
+
+    <string-array name="bitrate">
+        <item>240p</item>
+        <item>360p</item>
+        <item>432p</item>
+        <item>480p</item>
+        <item>480p HQ</item>
+        <item>576p</item>
+        <item>576p HQ</item>
+        <item>720p</item>
+        <item>720p HQ</item>
+    </string-array>
+</resources>
