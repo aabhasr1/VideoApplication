@@ -13,22 +13,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".ui.screen1.Screen1Activity"
-            android:label="Screen 1">
+        <activity android:name=".ui.screen1.Screen1Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".ui.screen2.Screen2Activity"
-            android:label="Screen 2" />
+        <activity android:name=".ui.screen2.Screen2Activity" />
 
-        <activity
-            android:name=".ui.screen3.Screen3Activity"
-            android:label="Screen 3" />
+        <activity android:name=".ui.screen3.Screen3Activity" />
     </application>
 
 </manifest>

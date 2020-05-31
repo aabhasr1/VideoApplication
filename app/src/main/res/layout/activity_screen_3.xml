@@ -15,6 +15,18 @@
         android:layout_height="match_parent"
         tools:context=".ui.screen1.Screen1Activity">
 
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/materialToolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="Screen 3"
+            app:titleTextColor="@android:color/white" />
+
         <VideoView
             android:id="@+id/videoView"
             android:layout_width="match_parent"
@@ -23,7 +35,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialToolbar2"
             app:urlLoop="@{model.url}" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
